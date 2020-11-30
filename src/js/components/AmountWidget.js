@@ -9,8 +9,6 @@ export class AmountWidget extends BaseWidget{
     thisWidget.getElements();
     thisWidget.initActions();
     thisWidget.renderValue();
-    //console.log('AmountWidget:', thisWidget);
-    //console.log('constructor argument:', element);
   }
 
   getElements(){
