@@ -205,16 +205,6 @@
   "order": [],
   "event": [
     {
-      "id": 1,
-      "date": "2020-12-01",
-      "hour": "12:30",
-      "table": 1,
-      "repeat": false,
-      "duration": 4,
-      "ppl": 3,
-      "starters": []
-    },
-    {
       "id": 2,
       "date": "2019-01-01",
       "hour": "16:00",
@@ -255,6 +245,8 @@
       "starters": ["lemonWater"]
     }
   ],
-  "booking": []
+  "booking": [
+
+  ]
 
 }
