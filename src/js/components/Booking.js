@@ -155,8 +155,8 @@ export class Booking {
     for(let table of thisBooking.dom.tables){
       table.addEventListener('click', function(event){
         event.preventDefault();
-        const tableClicked = table.getAttribute(
-          settings.booking.tableIdAttribute);
+        const tableClicked = parseInt(table.getAttribute(
+          settings.booking.tableIdAttribute));
 
         if(!table.classList.contains('booked')){
           table.classList.add('booked');
@@ -171,6 +171,8 @@ export class Booking {
   sendBooking(){
     const thisBooking = this;
     const url = settings.db.url + '/' + settings.db.booking;
+
+    thisBooking.getData();
 
     const payload = {
       date: thisBooking.datePicker.value,
@@ -204,6 +206,7 @@ export class Booking {
       .then(function(parsedResponse){
         console.log('parsedResponse', parsedResponse);
         alert('Table reserved');
+        thisBooking.getData();
       });
   }
 }
