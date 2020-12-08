@@ -116,28 +116,23 @@
 .galery {
   display: flex;
   flex-wrap: wrap;
-}
-
-.galery .galery-image {
-  flex: 0 0 33.33%;
-  width: 33.33%;
-  height: 100%;
-  // padding: 0px 5px;
-  // border: 15px;
-  margin: 125px;
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  padding: 5px;
-  // justify-content: center;
-}
-
-.galery .galery-image img {
-  width: 100%;
-  object-fit: cover;
-  height: 200px;
-  display: block;
+  .galery-image{
+    flex: 0 0 33.33%;
+    width: 33.33%;
+    height: 100%;
+    margin: 125px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 200px;
+      display: block;
+    }
+  }
 }
 
 .icons {
@@ -152,7 +147,6 @@
   background: rgba(0,0,0,0.5);
   opacity: 0;
   transition: all .7s;
-
   a {
     color: $color-light;
     transition: all .4s;
@@ -173,8 +167,7 @@
 .instagram {
   margin-top: 20px;
   margin-bottom: 50px;
-}
-
-.instagram a {
-  color: $color-main;
+  a {
+    color: $color-main;
+  }
 }

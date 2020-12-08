@@ -78,8 +78,9 @@ export const select = {
     form: '.booking-form',
   },
   nav: {
-    links: '.content a',
+    links: '.homepage__link, .main-nav a, .order-box__link',
   },
+
 };
 
 export const classNames = {
