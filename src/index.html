@@ -9,8 +9,10 @@
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="vendor/range-slider.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <header class="header">
@@ -20,10 +22,10 @@
           <h1 class="logo__title"><span>Mamma</span>Mia!</h1>
           <h2 class="logo__subtitle">the best homemade Italian food</h2>
         </div>
-        <div class="main-nav">
+        <!-- div class="main-nav">
           <a href="#order">Order</a>
           <a href="#booking">Booking</a>
-        </div>
+        </!-->
         <div id="cart" class="cart">
           <div class="cart__summary">
             <span class="cart__total-number">0</span>
@@ -62,6 +64,121 @@
   </header>
 
   <div id="pages">
+    <section id="homepage">
+      <div id="home" class="home container">
+        <div class="links-wrapper">
+          <div class="row order-box">
+            <img src="./images/homepage/pizza-1.jpg" alt="picture1">
+            <div class="content">
+              <a href="#order">ORDER ONLINE</a>
+              <h2 class="order-subtitle">Delicious food delivered to your door</h2>
+            </div>
+          </div>
+          <div class="row booking-box">
+              <img src="./images/homepage/pizza-2.jpg" alt="picture2">
+              <div class="content">
+                <a href="#booking">BOOK A TABLE</a>
+                <h2 class="order-subtitle">Delicious food delivered to your door</h2>
+              </div>
+          </div>
+          <div class="row opening-hours-box">
+            <div class="opening-hours-text">
+              <h1>OPENING HOURS:</h1>
+              <h2>TUE-SUN, 12PM - 12AM</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+              <li class="item1 active"></li>
+              <li class="item2"></li>
+              <li class="item3"></li>
+              <li class="item4"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-image">
+                <img src="./images/homepage/pizza-3.jpg" alt="picture3">
+              </div>
+              <div class="main-carousel">
+                <div class="item carousel-cell">
+                  <div class="carousel-text">
+                    <h3>AMAZING SERVICE!ONE</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt possimus quidem iusto quod tempora porro nobis sit tempore molestias praesentium molestiae magni facere repudiandae!<p>
+                    <p>-Margaret Osborne</p>
+                  </div>
+                </div>
+                <div class="item carousel-cell">
+                  <div class="carousel-text">
+                    <h3>AMAZING SERVICE!TWO</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt possimus quidem iusto quod tempora porro nobis sit tempore molestias praesentium molestiae magni facere repudiandae!<p>
+                    <p>-Margaret Osborne</p>
+                  </div>
+                </div>
+                <div class="item carousel-cell">
+                  <div class="carousel-text">
+                    <h3>AMAZING SERVICE!THREE</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt possimus quidem iusto quod tempora porro nobis sit tempore molestias praesentium molestiae magni facere repudiandae!<p>
+                    <p>-Margaret Osborne</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="galery">
+          <div class="galery-image">
+            <img src="images/homepage/pizza-4.jpg" alt="picture4">
+            <div class="icons">
+              <a href="#" class="heart-icon"><i class="fas fa-heart"></i></a>
+              <a href="#" class="share-icon"><i class="fas fa-share-alt"></i></a>
+            </div>
+          </div>
+          <div class="galery-image">
+            <img src="images/homepage/pizza-5.jpg" alt="picture4">
+            <div class="icons">
+              <a href="#" class="heart-icon"><i class="fas fa-heart"></i></a>
+              <a href="#" class="share-icon"><i class="fas fa-share-alt"></i></a>
+            </div>
+          </div>
+          <div class="galery-image">
+            <img src="images/homepage/pizza-6.jpg" alt="picture4">
+            <div class="icons">
+              <a href="#" class="heart-icon"><i class="fas fa-heart"></i></a>
+              <a href="#" class="share-icon"><i class="fas fa-share-alt"></i></a>
+            </div>
+          </div>
+          <div class="galery-image">
+            <img src="images/homepage/pizza-7.jpg" alt="picture4">
+            <div class="icons">
+              <a href="#" class="heart-icon"><i class="fas fa-heart"></i></a>
+              <a href="#" class="share-icon"><i class="fas fa-share-alt"></i></a>
+            </div>
+          </div>
+          <div class="galery-image">
+            <img src="images/homepage/pizza-8.jpg" alt="picture4">
+            <div class="icons">
+              <a href="#" class="heart-icon"><i class="fas fa-heart"></i></a>
+              <a href="#" class="share-icon"><i class="fas fa-share-alt"></i></a>
+            </div>
+          </div>
+          <div class="galery-image">
+            <img src="images/homepage/pizza-9.jpg" alt="picture4">
+            <div class="icons">
+              <a href="#" class="heart-icon"><i class="fas fa-heart"></i></a>
+              <a href="#" class="share-icon"><i class="fas fa-share-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="instagram">
+          <a href="https://www.instagram.com/">View more on Instagram</a>
+        </div>
+      </div>
+
+    </section>
     <section id="order">
       <div id="product-list" class="product-list container"></div>
     </section>
@@ -246,7 +363,17 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="vendor/range-slider.min.js"></script>
-  <script src="js/app.js" type="module"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+
+  <!-- ponizej dwa skrypty dla karuzeli -->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script> -->
+    <script src="js/app.js" type="module"></script>
+    <script src="js/components/Homepage.js" type="module"></script>
 </body>
 </html>

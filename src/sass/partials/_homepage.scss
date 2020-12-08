@@ -1,0 +1,180 @@
+.home {
+  background-color: $color-light;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+/* Order, Booking and opening hours */
+.links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.order-box, .booking-box {
+  flex: 0 0 50%;
+  position: relative;
+  float: left;
+  width: 50%;
+  margin-top: 50px;
+  &:hover .content{
+    top: 50%;
+  }
+}
+
+.order-box {
+  padding-right: 8px;
+}
+
+.order-box img, .booking-box img{
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  cursor: pointer;
+  transition: .4s;
+  &:hover .order-subtitle{
+    opacity: 100%;
+  }
+}
+
+.order-box a, .booking-box a{
+  color: $color-light;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.order-subtitle {
+  color: $color-light;
+  font-size: 13px;
+  opacity: 0;
+  transition: all .4s;
+}
+
+.opening-hours-box {
+  background: $color-main;
+  width: 100%;
+  height: 100px;
+}
+
+.opening-hours-text {
+  color: $color-light;
+  text-align: center;
+  margin-top: 22px;
+}
+
+.opening-hours-text h1 {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.opening-hours-text h2 {
+  margin-top: 0;
+  font-size: 11px;
+}
+
+/* Carousel */
+.main-carousel {
+  width: 100%;
+
+  .carousel-cell {
+    width: 100%;
+    padding: 0 60px;
+    height: 200px;
+  }
+}
+
+.carousel-inner {
+  display: flex;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.carousel {
+  margin: 80px 0;
+}
+
+.carousel-image img {
+  width: 200px;
+  height: 200px;
+}
+
+/* Galery */
+.galery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galery .galery-image {
+  flex: 0 0 33.33%;
+  width: 33.33%;
+  height: 100%;
+  // padding: 0px 5px;
+  // border: 15px;
+  margin: 125px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  // justify-content: center;
+}
+
+.galery .galery-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  display: block;
+}
+
+.icons {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: all .7s;
+
+  a {
+    color: $color-light;
+    transition: all .4s;
+  }
+}
+
+.galery-image:hover .icons{
+  opacity: 1;
+  a:hover{
+    color: $color-main;
+  }
+}
+
+.heart-icon {
+  margin-right: 10px;
+}
+
+.instagram {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.instagram a {
+  color: $color-main;
+}
