@@ -114,6 +114,7 @@ export class Booking {
         table.classList.remove(classNames.booking.tableBooked);
       }
     }
+    thisBooking.rangeSliderColor();
   }
 
   render(widgetContainer){
@@ -206,5 +207,30 @@ export class Booking {
         alert('Table reserved');
         thisBooking.getData();
       });
+  }
+
+  rangeSliderColor() {
+    const thisBooking = this;
+
+    const rangeSlider = document.querySelector('.rangeSlider');
+    let percentage = 0;
+    let color;
+    const colorGrad = [];
+    for (let i = 12; i < 24; i += 0.5) {
+      percentage += 100 / 24;
+      if ((typeof thisBooking.booked[thisBooking.datePicker.value][i] === 'undefined') || thisBooking.booked[thisBooking.datePicker.value][i].length === 1) {
+        color = `green ${percentage}%`;
+        colorGrad.push(color);
+      } else if (thisBooking.booked[thisBooking.datePicker.value][i].length === 2) {
+        color = `orange ${percentage}%`;
+        colorGrad.push(color);
+      } else {
+        color = `red ${percentage}%`;
+        colorGrad.push(color);
+      }
+    }
+    const linearGrad = colorGrad.join();
+    const gradient = `linear-gradient(to right, ${linearGrad})`;
+    rangeSlider.style.backgroundImage = gradient;
   }
 }
